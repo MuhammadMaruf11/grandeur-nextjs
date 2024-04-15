@@ -2,32 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+body{
+  font-weight: 400;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.hover\:text-theme:hover {
+  color: #af5517;
+}
+
+.hover\:text-theme-2:hover {
+  color: #f37022;
+}
+
+.hover\:bg-theme:hover {
+  background: #af5517;
+}
+
+.hover\:bg-theme-2:hover {
+  background: #f37022;
+}
+
+.before\:bg-theme:before {
+  background: #af5517;
+}
+
+.before\:bg-theme-2:before {
+  background: #f37022;
+}
+
+.after\:bg-theme:after {
+  background: #af5517;
+}
+
+.after\:bg-theme-2:after {
+  background: #f37022;
+}
+
+.text-theme {
+  color: #af5517;
+}
+
+.text-theme-2 {
+  color: #f37022;
+}
+
+
+.border-theme {
+  --tw-border-opacity: 1;
+    border-color: rgb(175 85 23/ var(--tw-border-opacity));
+}
+
+.border-theme-2 {
+    --tw-border-opacity: 1;
+    border-color: rgb(243 112 34 / var(--tw-border-opacity));
+}
+
+
+.bg-theme {
+    --tw-bg-opacity: 1;
+    background-color: rgb(175 85 23/var(--tw-bg-opacity));
+}
+
+.bg-theme-2 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 112 34/var(--tw-bg-opacity));
 }
