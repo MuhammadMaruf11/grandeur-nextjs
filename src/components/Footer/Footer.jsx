@@ -75,22 +75,22 @@ const Footer = () => {
             </ul>
             <ul className="mt-8 text-theme-2">
               <li className="inline-block mr-6">
-                <Link target="_blank" href='https://www.facebook.com/' area-label='facebook'>
+                <Link target="_blank" href='https://www.facebook.com/' aria-label="Visit our Facebook page">
                   <i className="fa-brands fa-facebook-square fa-2xl"></i>
                 </Link>
               </li>
               <li className="inline-block mr-6">
-                <Link target="_blank" href='https://www.instagram.com' area-label='instagram'>
+                <Link target="_blank" href='https://www.instagram.com' aria-label="Visit our Instagram page">
                   <i className="fa-brands fa-instagram-square fa-2xl"></i>
                 </Link>
               </li>
               <li className="inline-block mr-6">
-                <Link target="_blank" href='https://www.linkedin.com' area-label='linkedin'>
+                <Link target="_blank" href='https://www.linkedin.com' aria-label="Visit our LinkedIn page">
                   <i className="fa-brands fa-linkedin fa-2xl"></i>
                 </Link>
               </li>
               <li className="inline-block">
-                <Link target="_blank" href='https://www.twitter.com' area-label='twitter'>
+                <Link target="_blank" href='https://www.twitter.com' aria-label="Visit our Twitter page">
                   <i className="fa-brands fa-twitter-square fa-2xl"></i>
                 </Link>
               </li>

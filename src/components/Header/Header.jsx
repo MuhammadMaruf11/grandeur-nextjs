@@ -78,27 +78,27 @@ const Header = () => {
         <div className="hidden lg:inline-block text-end">
           <ul className="flex">
             <li className="inline-block">
-              <Link href="/" className={` px-4 py-2 font-medium ${pathname === '/' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+              <Link href="/" className={` px-4 py-2 font-medium ${pathname === '/' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-theme border-theme' : 'border border-transparent'}`}>
                 Home
               </Link>
             </li>
             <li className="inline-block mx-2">
-              <Link href="/about" className={` px-4 py-2 font-medium ${pathname === '/about' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+              <Link href="/about" className={` px-4 py-2 font-medium ${pathname === '/about' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-theme border-theme' : 'border border-transparent'}`}>
                 About us
               </Link>
             </li>
             <li className="inline-block mx-2">
-              <Link href="/services" className={` px-4 py-2 font-medium ${pathname === '/services' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+              <Link href="/services" className={` px-4 py-2 font-medium ${pathname === '/services' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-theme border-theme' : 'border border-transparent'}`}>
                 Our Services
               </Link>
             </li>
             <li className="inline-block mx-2">
-              <Link href="/solutions" className={` px-4 py-2 font-medium ${pathname === '/solutions' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+              <Link href="/solutions" className={` px-4 py-2 font-medium ${pathname === '/solutions' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-theme border-theme' : 'border border-transparent'}`}>
                 Network Solutions
               </Link>
             </li>
             <li className="inline-block">
-              <Link href="/contact" className={` px-4 py-2 font-medium ${pathname === '/contact' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+              <Link href="/contact" className={` px-4 py-2 font-medium ${pathname === '/contact' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-theme border-theme' : 'border border-transparent'}`}>
                 Contact Us
               </Link>
             </li>

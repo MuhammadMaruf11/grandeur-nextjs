@@ -12,7 +12,7 @@ const ServicesComp = () => {
     const filterDatas = pathname === "/" ? servicesData?.slice(0, 3) : servicesData;
 
     const textWhite = `Our Services done by professionals`;
-    const textTheme = `to solve your security challenges.`;
+    const textTheme = `to solve your packets challenges.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (
@@ -32,13 +32,13 @@ const ServicesComp = () => {
                                     </div>
                                     <h3 className="text-xl text-theme font-bold">{title}</h3>
                                     <p className="text-xm">{description}</p>
-                                    <Link className="border border-theme text-theme hover:border-indigo-500 hover:bg-indigo-500 hover:text-white transition-all ease-linear px-3 py-2" href={url}>Learn More <i className="fa-regular fa-arrow-up-right ms-1"></i></Link>
+                                    <Link className="border border-theme text-theme hover:bg-theme hover:text-white transition-all ease-linear px-3 py-2" href={url}>More Details <i className="fa-regular fa-arrow-up-right ms-1"></i></Link>
                                 </div>
                             )
                         })}
                     </div>
                     {pathname === '/' && <div className="text-center mt-12">
-                        <Link className="border border-indigo-500 inline-block bg-indigo-500 p-4 rounded-tl-3xl rounded-br-3xl hover:text-indigo-500 hover:bg-white transition-all ease-linear text-white" href='/services'>Explore Our Servies</Link>
+                        <Link className="rounded-tl-3xl rounded-br-3xl border border-theme text-theme  hover:bg-theme hover:text-white transition-all ease-linear p-4" href='/services'>Explore Our Servies</Link>
                     </div>}
                 </>
             </div>
