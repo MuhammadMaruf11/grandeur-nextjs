@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
@@ -12,8 +12,29 @@ import { usePathname } from 'next/navigation'
 
 const Header = () => {
 
-  const router = usePathname();
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        setIsHeaderFixed(true);
+      } else {
+        setIsHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const headerClassName = isHeaderFixed
+    ? "fixed bg-white"
+    : "absolute bg-transparent text-white";
+
+  const pathname = usePathname();
 
   const [menuBtn, setMenuBtn] = useState(false);
 
@@ -43,9 +64,9 @@ const Header = () => {
 
   }
   return (
-    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      <div className="flex items-center justify-between w-full px-3 py-3 mx-auto xl:px-0 max-w-7xl">
-        <div className="w-full lg:w-1/6">
+    <header className={`${headerClassName} transition-all ease-linear top-0 z-50 w-full  shadow-sm`}>
+      <div className="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl">
+        <div className="w-2/3 md:w-1/3 lg:w-1/6">
           <Link href="/">
             <img
               className="mx-auto lg:mx-0"
@@ -56,24 +77,29 @@ const Header = () => {
         </div>
         <div className="hidden lg:inline-block text-end">
           <ul className="flex">
-            <li className="inline-block mx-4">
-              <Link href="/" className={` px-5 py-2 font-medium ${router === '/' ? 'text-white transition-all duration-300 ease-linear border rounded-3xl bg-theme-2 border-theme-2' : ''}`}>
+            <li className="inline-block">
+              <Link href="/" className={` px-4 py-2 font-medium ${pathname === '/' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
                 Home
               </Link>
             </li>
-            <li className="inline-block mx-4">
-              <Link href="/about-us" className={` px-5 py-2 font-medium ${router === '/about-us' ? 'text-white transition-all duration-300 ease-linear border rounded-3xl bg-theme-2 border-theme-2' : ''}`}>
+            <li className="inline-block mx-2">
+              <Link href="/about" className={` px-4 py-2 font-medium ${pathname === '/about' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
                 About us
               </Link>
             </li>
-            <li className="inline-block mx-4">
-              <Link href="/contact-us" className={` px-5 py-2 font-medium ${router === '/contact-us' ? 'text-white transition-all duration-300 ease-linear border rounded-3xl bg-theme-2 border-theme-2' : ''}`}>
-                Contact Us
+            <li className="inline-block mx-2">
+              <Link href="/services" className={` px-4 py-2 font-medium ${pathname === '/services' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+                Our Services
+              </Link>
+            </li>
+            <li className="inline-block mx-2">
+              <Link href="/solutions" className={` px-4 py-2 font-medium ${pathname === '/solutions' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+                Network Solutions
               </Link>
             </li>
             <li className="inline-block">
-              <Link href="/report-claim" className={` px-5 py-2 font-medium ${router === '/report-claim' ? 'text-white transition-all duration-300 ease-linear border rounded-3xl bg-theme-2 border-theme-2' : ''}`}>
-                Login
+              <Link href="/contact" className={` px-4 py-2 font-medium ${pathname === '/contact' ? 'text-white transition-all duration-300 ease-linear border rounded-2xl bg-indigo-500 border-indigo-500' : 'border border-transparent'}`}>
+                Contact Us
               </Link>
             </li>
           </ul>

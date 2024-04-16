@@ -1,6 +1,9 @@
 // Importing required components
 // import Banner from "@/components/Banner/Banner";          //  banner component
 
+import BannerComp from "@/components/BannerComp/BannerComp";
+import ServicesComp from "@/components/ServicesComp/ServicesComp";
+
 /**
  * Home page component
  * 
@@ -14,7 +17,8 @@
 export default function Home() {
   return (
     <main>
-     
+      <BannerComp />
+      <ServicesComp/>
     </main>
   )
 }
