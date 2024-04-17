@@ -2,6 +2,7 @@
 // import Banner from "@/components/Banner/Banner";          //  banner component
 
 import BannerComp from "@/components/BannerComp/BannerComp";
+import { PricingComp } from "@/components/PricingComp/PricingComp";
 import ServicesComp from "@/components/ServicesComp/ServicesComp";
 
 /**
@@ -18,7 +19,8 @@ export default function Home() {
   return (
     <main>
       <BannerComp />
-      <ServicesComp/>
+      <ServicesComp />
+      <PricingComp/>
     </main>
   )
 }

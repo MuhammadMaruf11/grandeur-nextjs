@@ -11,7 +11,7 @@ const ServicesComp = () => {
 
     const filterDatas = pathname === "/" ? servicesData?.slice(0, 3) : servicesData;
 
-    const textWhite = `Our Services done by professionals`;
+    const simpleText = `Our Services done by professionals`;
     const textTheme = `to solve your packets challenges.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
@@ -19,7 +19,7 @@ const ServicesComp = () => {
         <section className="bg-[url('/img/bg/BGLine-01.svg')] bg-cover bg-no-repeat bg-top py-20">
             <div className="max-w-7xl mx-auto px-3">
                 <>
-                    <SectionHeader textWhite={textWhite} textTheme={textTheme} description={description} />
+                    <SectionHeader simpleText={simpleText} textTheme={textTheme} description={description} />
                 </>
                 <>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
