@@ -28,7 +28,7 @@ const ServicesComp = () => {
                             return (
                                 <div key={index} className=" bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 flex flex-col items-center gap-4 text-center px-7 rounded-md transition-all ease-linear py-14 hover:shadow-2xl">
                                     <div className="bg-white bg-opacity-50 border-2 border-indigo-300 p-3 mb-3 rounded-md text-4xl">
-                                        <i className={icon}></i>
+                                        <img className="w-8" src={icon} alt="icons" />
                                     </div>
                                     <h3 className="text-xl text-theme font-bold">{title}</h3>
                                     <p className="text-xm">{description}</p>

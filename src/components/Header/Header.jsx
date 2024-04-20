@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -12,6 +13,29 @@ import { navbarData } from "@/allData/navbarData";
  */
 
 const Header = () => {
+
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        setIsHeaderFixed(true);
+      } else {
+        setIsHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const headerClassName = isHeaderFixed
+    ? "fixed bg-indigo-950"
+    : "absolute bg-transparent text-white";
+
 
   const pathname = usePathname();
 
@@ -43,7 +67,7 @@ const Header = () => {
 
   }
   return (
-    <header className={`sticky bg-indigo-950 text-white transition-all ease-linear top-0 z-50 w-full  shadow-sm`}>
+    <header className={`${headerClassName} text-white transition-all ease-linear top-0 z-50 w-full shadow-sm`}>
       <div className="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl">
         <div className="w-2/3 md:w-1/3 lg:w-1/6">
           <Link href="/">

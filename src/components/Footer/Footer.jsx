@@ -6,6 +6,7 @@
  * and contact information.
  */
 
+import { navbarData } from "@/allData/navbarData";
 import { servicesData } from "@/allData/servicesData";
 import Link from "next/link";
 
@@ -37,18 +38,14 @@ const Footer = () => {
           <div className="px-3 text-white">
             <h3 className="mb-3 text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
-              <li className="">
-                <Link href='/about'>About Us &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
-              </li>
-              <li className="">
-                <Link href='/services'>Our Services &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
-              </li>
-              <li className="">
-                <Link href='/solutions'>Network Solutions &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
-              </li>
-              <li className="">
-                <Link href='/contact'>Contact Us &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
-              </li>
+              {navbarData?.slice(1)?.map((data, index) => {
+                const { title, url } = data;
+                return (
+                  <li key={index} className="">
+                    <Link href={url}>{title} &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
+                  </li>
+                )
+              })}
               <li className="">
                 <Link href='/terms'>Terms &amp; Condition &nbsp; <i className="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat-fade"></i></Link>
               </li>
