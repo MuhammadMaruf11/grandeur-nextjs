@@ -1,5 +1,4 @@
 
-
 const SectionHeader = ({ plainText, simpleText, textTheme, description }) => {
     return (
         <div className="text-center mx-auto mb-12 lg:max-w-4xl">

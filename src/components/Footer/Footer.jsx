@@ -1,10 +1,3 @@
-/**
- * Footer Component
- *
- * This component represents the footer section of the website.
- * It displays various sections including USA Underwriter information, support details,
- * and contact information.
- */
 
 import { navbarData } from "@/allData/navbarData";
 import { servicesData } from "@/allData/servicesData";
@@ -13,7 +6,7 @@ import Link from "next/link";
 const Footer = () => {
 
   return (
-    <footer className=" bg-[url('/img/bg/footer-bg.svg')] bg-center bg-cover bg-no-repeat bg-black">
+    <footer className=" bg-[url('/img/bg/footer-bg.webp')] bg-center bg-cover bg-no-repeat bg-black">
       <div className="py-8 md:py-12 backdrop-blur-sm">
         <div className="mx-auto text-sm md:grid md:grid-cols-2 max-w-7xl lg:grid-cols-4 ">
           <div className="px-3 text-white">

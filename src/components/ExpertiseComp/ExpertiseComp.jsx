@@ -1,14 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-
 const ExpertiseComp = () => {
     return (
-        <section className="py-10 max-w-screen-xl mx-auto">
+        <section className="">
             <div className="grid grid-cols-2 items-center max-w-screen-xl mx-auto">
                 <div className="px-3">
                     <div className="bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 p-4 rounded-md">
-                        <h2 className="text-3xl font-bold mb-4">Our Expertise</h2>
+                        <h2 className="text-3xl font-bold mb-4 text-theme">Our Expertise</h2>
                         <p className="">
                             WiFi Settings in Labor Camps: Navigating the complexities of connectivity in labor camps requires specialized knowledge and experience. At Grandeur Technologies, we excel in designing, implementing, and optimizing WiFi networks specifically tailored to the unique requirements of labor camp environments. Our solutions ensure seamless connectivity, high performance, and reliable coverage, empowering businesses to operate efficiently and effectively.
                             <br /><br />
@@ -19,7 +18,7 @@ const ExpertiseComp = () => {
                     </div>
                 </div>
                 <div className="px-3">
-                    <img className='mx-auto' src="/img/about/customer-centric-ISP-diagram.webp" alt="expertise" />
+                    <img loading="lazy" className='mx-auto' src="/img/about/our-expertise.webp" alt="expertise" />
                 </div>
             </div>
         </section>

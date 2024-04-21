@@ -1,29 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';
-import Link from "next/link";
-import SectionHeader from "../SectionHeader/SectionHeader";
-import { servicesData } from "@/allData/servicesData";
-import { usePathname } from "next/navigation";
+import SectionHeader from '../SectionHeader/SectionHeader';
+import Link from 'next/link';
+import { solutionsData } from '@/allData/solutionsData';
 
-const ServicesComp = () => {
+const SolutionsComp = () => {
 
-    const pathname = usePathname();
-
-    const filterDatas = pathname === "/" ? servicesData?.slice(0, 3) : servicesData;
-
-    const simpleText = `Our Services done by professionals`;
+    const simpleText = `Our Network Solutions`;
     const textTheme = `to solve your packets challenges.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (
-        <section className=" bg-cover bg-no-repeat bg-top pb-20">
+        <section className=" bg-cover bg-no-repeat bg-top pt-20">
             <div className="max-w-7xl mx-auto px-3">
                 <>
                     <SectionHeader simpleText={simpleText} textTheme={textTheme} description={description} />
                 </>
                 <>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
-                        {filterDatas?.map((data, index) => {
+                        {solutionsData?.map((data, index) => {
                             const { icon, title, description, url } = data;
                             return (
                                 <div key={index} className=" bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 flex flex-col items-center gap-4 text-center px-7 rounded-md transition-all ease-linear py-14 hover:shadow-2xl">
@@ -37,13 +31,10 @@ const ServicesComp = () => {
                             )
                         })}
                     </div>
-                    {pathname === '/' && <div className="mt-12 flex justify-center">
-                        <Link className="rounded-tl-3xl rounded-br-3xl border border-theme text-theme  hover:bg-theme hover:text-white transition-all ease-linear p-4" href='/services'>Explore Our Servies</Link>
-                    </div>}
                 </>
             </div>
         </section>
     );
 };
 
-export default ServicesComp;
+export default SolutionsComp;

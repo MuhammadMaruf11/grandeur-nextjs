@@ -4,6 +4,7 @@
 import BannerComp from "@/components/BannerComp/BannerComp";
 import { PricingComp } from "@/components/PricingComp/PricingComp";
 import ServicesComp from "@/components/ServicesComp/ServicesComp";
+import SolutionsComp from "@/components/SolutionsComp/SolutionsComp";
 
 /**
  * Home page component
@@ -19,8 +20,11 @@ export default function Home() {
   return (
     <main>
       <BannerComp />
-      <ServicesComp />
-      <PricingComp/>
+      <div className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
+        <ServicesComp />
+        <PricingComp />
+        <SolutionsComp />
+      </div>
     </main>
   )
 }

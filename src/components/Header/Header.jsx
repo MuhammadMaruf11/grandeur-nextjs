@@ -5,13 +5,6 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { navbarData } from "@/allData/navbarData";
 
-/**
- * Header Component
- * 
- * This component represents the header section of the website.
- * It contains the navigation links and a mobile menu toggle.
- */
-
 const Header = () => {
 
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);

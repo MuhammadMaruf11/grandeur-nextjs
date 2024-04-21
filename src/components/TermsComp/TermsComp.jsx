@@ -2,7 +2,7 @@
 
 const TermsComp = () => {
     return (
-        <section className="py-20  bg-[url('/img/bg/BGLine-01.svg')]">
+        <section className="py-20  bg-[url('/img/bg/BGLine-01.webp')]">
             <div className="max-w-screen-xl mx-auto  bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 px-7 rounded-md py-14">
                 <h2 className="text-3xl font-bold mb-4 text-center text-theme">Terms & Conditions</h2>
                 <p className="text-justify">

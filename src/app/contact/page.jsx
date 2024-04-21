@@ -10,7 +10,9 @@ const contact = () => {
     return (
         <main>
             <SubBannerComp mainTitle={mainTitle} />
-            <ContactUsComp />
+            <div className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
+                <ContactUsComp />
+            </div>
             <ContactMapComp />
         </main>
     );

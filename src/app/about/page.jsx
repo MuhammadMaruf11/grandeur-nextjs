@@ -16,11 +16,11 @@ const about = () => {
     return (
         <main>
             <SubBannerComp mainTitle={mainTitle} />
-            <div className="bg-[url('/img/bg/BGLine-01.svg')] bg-cover bg-no-repeat bg-top py-20">
+            <div className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
                 <SectionHeader simpleText={simpleText} textTheme={textTheme} description={description} />
                 <MissionComp />
-                <ExpertiseComp />
                 <ChooseComp />
+                <ExpertiseComp />
             </div>
         </main>
     );
