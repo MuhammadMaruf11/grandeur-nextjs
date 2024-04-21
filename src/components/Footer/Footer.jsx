@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 import { navbarData } from "@/allData/navbarData";
 import { servicesData } from "@/allData/servicesData";
