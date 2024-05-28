@@ -3,7 +3,7 @@ export const servicesData = [
         icon:'/img/icons/billing-software.webp',
         title: 'Billing Software',
         description: 'Thorough examination and evaluation of web applications to identify vulnerabilities and strengthen security measures.',
-        url: '/Security',
+        url: '/services/billing-software',
     },
     {
         icon: '/img/icons/wholesale-mobile-and-laptop.webp',
@@ -15,7 +15,7 @@ export const servicesData = [
         icon: '/img/icons/wifi-hotspot.webp',
         title: 'WiFi Hotspot',
         description: 'Thorough examination and evaluation of web applications to identify vulnerabilities and strengthen security measures.',
-        url: '',
+        url: '/services/wifi-hotspot',
     },
     {
         icon: '/img/icons/computer-systems-and-equipment-software-trading.webp',
