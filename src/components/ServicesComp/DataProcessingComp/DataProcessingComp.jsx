@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import { wifiHotspotData } from "@/allData/wifiHotspotData";
+import { wholesaleData } from "@/allData/wholesaleData";
+import { dataProcessingData } from "@/allData/dataProcessingData";
 
-const WifiHotspotComp = () => {
+const DataProcessingComp = () => {
 
-    const simpleText = `WIFI INTERNET `;
-    const textTheme = `SERVICE AGREEMENT.`;
+    const simpleText = `Computer &  `;
+    const textTheme = `Data Processing Requisites Trading.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (
@@ -16,7 +17,7 @@ const WifiHotspotComp = () => {
                 </>
                 <>
                     <div className="grid grid-cols-1 bg-indigo-300 bg-opacity-30 backdrop-blur-sm border border-indigo-300 rounded-md">
-                        {wifiHotspotData?.map((detail, index) => {
+                        {dataProcessingData?.map((detail, index) => {
                             return (
                                 <details key={index} className="group">
                                     <summary className="flex items-center justify-between p-4 list-none border border-indigo-300 cursor-pointer">
@@ -28,21 +29,24 @@ const WifiHotspotComp = () => {
                                             <i className="fa-sharp fa-solid fa-chevron-down"></i>
                                         </span>
                                     </summary>
-                                    <ul className="border border-indigo-300 p-4 list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
-                                        {detail?.descriptions.map((listItem, index) => {
-                                            return (
-                                                <li className="" key={index}>{listItem}</li>
-                                            )
-                                        })}
-                                   </ul>
+                                    <div className="border border-indigo-300 p-4">
+                                        {detail?.content && <p className="mb-3">{detail?.content}</p>}
+                                        <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
+                                            {detail?.descriptions.map((listItem, index) => {
+                                                return (
+                                                    <li className="" key={index}>{listItem}</li>
+                                                )
+                                            })}
+                                        </ul>
+                                    </div>
                                 </details>
                             )
                         })}
-                                           </div>
+                    </div>
                 </>
             </div>
         </section>
     );
 };
 
-export default WifiHotspotComp;
+export default DataProcessingComp;

@@ -9,7 +9,7 @@ export const servicesData = [
         icon: '/img/icons/wholesale-mobile-and-laptop.webp',
         title: 'Wholesale Mobile & Laptop',
         description: 'Thorough examination and evaluation of web applications to identify vulnerabilities and strengthen security measures.',
-        url: '',
+        url: '/services/wholesale-mobile-laptop',
     },
     {
         icon: '/img/icons/wifi-hotspot.webp',
@@ -21,13 +21,13 @@ export const servicesData = [
         icon: '/img/icons/computer-systems-and-equipment-software-trading.webp',
         title: 'Compouter Systems & Communication Equipment Software Trading',
         description: 'Thorough examination and evaluation of web applications to identify vulnerabilities and strengthen security measures.',
-        url: '',
+        url: '/services/compouter-systems',
     },
     {
         icon: '/img/icons/computer-&-data-processing-requisites-trading.webp',
         title: 'Computer & Data Processing Requisites Trading',
         description: 'Thorough examination and evaluation of web applications to identify vulnerabilities and strengthen security measures.',
-        url: '',
+        url: '/services/computer-data',
     },
     {
         icon: '/img/icons/mobile-phone-and-accessories-trading.webp',

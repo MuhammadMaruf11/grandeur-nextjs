@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import { wifiHotspotData } from "@/allData/wifiHotspotData";
+import { wholesaleData } from "@/allData/wholesaleData";
 
-const WifiHotspotComp = () => {
+const WholesaleComp = () => {
 
-    const simpleText = `WIFI INTERNET `;
-    const textTheme = `SERVICE AGREEMENT.`;
+    const simpleText = `WHOLESALE MOBILE & LAPTOP `;
+    const textTheme = `SELLS AGREEMENT.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (
@@ -16,7 +16,7 @@ const WifiHotspotComp = () => {
                 </>
                 <>
                     <div className="grid grid-cols-1 bg-indigo-300 bg-opacity-30 backdrop-blur-sm border border-indigo-300 rounded-md">
-                        {wifiHotspotData?.map((detail, index) => {
+                        {wholesaleData?.map((detail, index) => {
                             return (
                                 <details key={index} className="group">
                                     <summary className="flex items-center justify-between p-4 list-none border border-indigo-300 cursor-pointer">
@@ -45,4 +45,4 @@ const WifiHotspotComp = () => {
     );
 };
 
-export default WifiHotspotComp;
+export default WholesaleComp;
