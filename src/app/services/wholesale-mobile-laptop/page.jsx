@@ -3,7 +3,7 @@ import SubBannerComp from '@/components/SubBannerComp/SubBannerComp';
 
 const Wholesale = () => {
     // sub page banner component content 
-    const mainTitle = 'WHOLESALE MOBILE & LAPTOP'
+    const mainTitle = 'Wholesale Mobile & Laptop'
 
     return (
         <main>

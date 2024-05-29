@@ -7,7 +7,7 @@ const DataProcessingComp = () => {
 
     const simpleText = `Computer &  `;
     const textTheme = `Data Processing Requisites Trading.`;
-    const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
+    const description = `Granduer is a licensed and authorized distributor of a wide range of computer and data processing equipment and supplies.`;
 
     return (
         <section className=" bg-cover bg-no-repeat bg-top pb-20">

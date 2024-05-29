@@ -1,7 +1,6 @@
 export const computerSystemData = [
     {
         title: `Description`,
-        content: `Granduer is a licensed distributor and reseller of a wide range of computer systems, communication equipment, and software products. We offer a one-stop shop for all your IT needs, providing you with access to a comprehensive selection of:`,
         descriptions: [
             `Computer Systems: Desktops, laptops, workstations, servers, and other computing devices from leading brands.`,
             `Communication Equipment: Network routers, switches, firewalls, access points, cabling, and other networking solutions.`,

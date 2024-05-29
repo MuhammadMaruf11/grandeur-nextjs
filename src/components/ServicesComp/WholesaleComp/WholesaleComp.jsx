@@ -4,8 +4,8 @@ import { wholesaleData } from "@/allData/wholesaleData";
 
 const WholesaleComp = () => {
 
-    const simpleText = `WHOLESALE MOBILE & LAPTOP `;
-    const textTheme = `SELLS AGREEMENT.`;
+    const simpleText = `Wholesale Mobile & Laptop `;
+    const textTheme = `Sells Agreement.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (

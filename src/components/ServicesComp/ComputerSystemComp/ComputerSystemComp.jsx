@@ -6,7 +6,7 @@ const ComputerSystemComp = () => {
 
     const simpleText = `Computer Systems &  `;
     const textTheme = `Communication Equipment Software Trading.`;
-    const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
+    const description = `Granduer is a licensed distributor and reseller of a wide range of computer systems, communication equipment, and software products. We offer a one-stop shop for all your IT needs.`;
 
     return (
         <section className=" bg-cover bg-no-repeat bg-top pb-20">

@@ -1,7 +1,6 @@
 export const dataProcessingData = [
     {
         title: `Service Provider`,
-        content: `Granduer is a licensed and authorized distributor of a wide range of computer and data processing equipment and supplies.`,
         descriptions: [
             `Hardware Sales: We offer a comprehensive selection of computer hardware, including desktops, laptops, servers, printers, monitors, networking equipment, and storage devices. We source our products from reputable brands and can cater to various business needs and budgets.`,
             `Software Distribution: We provide a variety of software solutions, including operating systems, productivity suites, anti-virus programs, and industry-specific applications. We can assist with license acquisition and installation.`,

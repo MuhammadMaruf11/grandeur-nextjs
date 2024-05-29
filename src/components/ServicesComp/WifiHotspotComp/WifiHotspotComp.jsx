@@ -4,8 +4,8 @@ import { wifiHotspotData } from "@/allData/wifiHotspotData";
 
 const WifiHotspotComp = () => {
 
-    const simpleText = `WIFI INTERNET `;
-    const textTheme = `SERVICE AGREEMENT.`;
+    const simpleText = `WIFI Internet `;
+    const textTheme = `Service Agreement.`;
     const description = `We provide to notch internet services with professional hands. We not only think about present security but also it’s future. Future security is our first priority.`;
 
     return (
