@@ -28,17 +28,17 @@ const WholesaleComp = () => {
                                             <i className="fa-sharp fa-solid fa-chevron-down"></i>
                                         </span>
                                     </summary>
-                                    <ul className="border border-indigo-300 p-4 list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
+                                    <ul className="border lg:text-base text-sm border-indigo-300 p-4 list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
                                         {detail?.descriptions.map((listItem, index) => {
                                             return (
                                                 <li className="" key={index}>{listItem}</li>
                                             )
                                         })}
-                                   </ul>
+                                    </ul>
                                 </details>
                             )
                         })}
-                                           </div>
+                    </div>
                 </>
             </div>
         </section>

@@ -2,13 +2,13 @@
 
 const PrivacyComp = () => {
     return (
-        <section className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
-            <div className="max-w-screen-lg mx-auto bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300  px-7 rounded-md py-14">
-                <h2 className="text-3xl font-bold mb-4 text-center text-theme">Our Commitment to Protecting Your Privacy</h2>
-                <p className="text-justify mb-4">
+        <section className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20 px-3">
+            <div className="max-w-screen-lg mx-auto bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 p-4 md:px-7 rounded-md lg:py-14">
+                <h2 className="lg:text-3xl text-2xl font-bold mb-4 md:text-center text-theme">Our Commitment to Protecting Your Privacy</h2>
+                <p className="text-justify mb-4 lg:text-base text-sm">
                     Our Privacy Policy explains how we collect, use, and protect your personal information when you use our website or services. We are committed to safeguarding your privacy and ensuring the security of your personal data. This policy outlines our data collection practices, the purposes for which we use your information, your rights regarding your data, and how we protect your privacy. Your privacy matters to us, and we are dedicated to being transparent about our data practices.
                 </p>
-                <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2 text-justify">
+                <ul className=" list-[disclosure-closed] lg:text-base text-sm marker:text-[#f37022] list-inside space-y-2 text-justify">
                     <li><strong>Introduction: </strong>Briefly explain the purpose of the Privacy Policy and its importance for users.</li>
                     <li><strong>Types of Information Collected: </strong>Detail the types of personal information collected, such as name, email address, phone number, IP address, etc.</li>
                     <li><strong>Methods of Collection: </strong>Explain how the website collects user information, including cookies, forms, registration, etc.</li>

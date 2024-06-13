@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   font-weight: 400;
 }
 
@@ -10,6 +10,10 @@ body{
   .text-balance {
     text-wrap: balance;
   }
+}
+
+input:focus {
+  outline: 1px solid #a5b4fc;
 }
 
 .hover\:text-theme:hover {
@@ -52,24 +56,22 @@ body{
   color: #f37022;
 }
 
-
 .border-theme {
   --tw-border-opacity: 1;
-    border-color: rgb(175 85 23/ var(--tw-border-opacity));
+  border-color: rgb(175 85 23 / var(--tw-border-opacity));
 }
 
 .border-theme-2 {
-    --tw-border-opacity: 1;
-    border-color: rgb(243 112 34 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgb(243 112 34 / var(--tw-border-opacity));
 }
 
-
 .bg-theme {
-    --tw-bg-opacity: 1;
-    background-color: rgb(175 85 23/var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(175 85 23 / var(--tw-bg-opacity));
 }
 
 .bg-theme-2 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 112 34/var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 112 34 / var(--tw-bg-opacity));
 }

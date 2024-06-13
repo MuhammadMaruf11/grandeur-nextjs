@@ -29,7 +29,7 @@ const DataProcessingComp = () => {
                                             <i className="fa-sharp fa-solid fa-chevron-down"></i>
                                         </span>
                                     </summary>
-                                    <div className="border border-indigo-300 p-4">
+                                    <div className="border lg:text-base text-sm border-indigo-300 p-4">
                                         {detail?.content && <p className="mb-3">{detail?.content}</p>}
                                         <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
                                             {detail?.descriptions.map((listItem, index) => {

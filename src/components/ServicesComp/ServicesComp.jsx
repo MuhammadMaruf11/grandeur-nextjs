@@ -22,7 +22,7 @@ const ServicesComp = () => {
                     <SectionHeader simpleText={simpleText} textTheme={textTheme} description={description} />
                 </>
                 <>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-14">
                         {filterDatas?.map((data, index) => {
                             const { icon, title, description, url } = data;
                             return (

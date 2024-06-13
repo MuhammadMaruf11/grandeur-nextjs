@@ -2,13 +2,13 @@
 
 const TermsComp = () => {
     return (
-        <section className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
-            <div className="max-w-screen-lg mx-auto  bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 px-7 rounded-md py-14">
-                <h2 className="text-3xl font-bold mb-4 text-center text-theme">Your Agreement to Use Our Services</h2>
-                <p className="text-justify mb-4">
+        <section className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20 px-3">
+            <div className="max-w-screen-lg mx-auto bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 md:px-7 p-4 rounded-md lg:py-14">
+                <h2 className="lg:text-3xl text-2xl font-bold mb-4 md:text-center text-theme">Your Agreement to Use Our Services</h2>
+                <p className="text-justify mb-4 lg:text-base text-sm">
                     Our Terms & Conditions outline the rules and guidelines governing the use of our website and services. By accessing or using our website, you agree to abide by these terms, which cover important aspects such as user responsibilities, website usage rights, disclaimers, limitations of liability, and more. Please read these terms carefully before using our website.
                 </p>
-                <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2 text-justify">
+                <ul className=" list-[disclosure-closed] lg:text-base text-sm marker:text-[#f37022] list-inside space-y-2 text-justify">
                     <li><strong>Introduction: </strong>Provide an overview of the Terms & Conditions and its applicability to users accessing the website or using its services.</li>
                     <li><strong>User Responsibilities: </strong>Outline the responsibilities of users when accessing the website or using its services, including compliance with laws, respect for intellectual property rights, etc.</li>
                     <li><strong>Website Usage Rights: </strong>Detail the rights granted to users for accessing and using the website or its services, including non-exclusive, non-transferable, limited rights.</li>

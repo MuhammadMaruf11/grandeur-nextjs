@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { computerSystemData } from "@/allData/computerSystemData";
+import { billingSoftwareData } from "@/allData/billingSoftwareData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const ComputerSystemComp = () => {
+const BillingSoftwareComp = () => {
 
-    const simpleText = `Computer Systems &  `;
-    const textTheme = `Communication Equipment Software Trading.`;
-    const description = `Granduer is a licensed distributor and reseller of a wide range of computer systems, communication equipment, and software products. We offer a one-stop shop for all your IT needs.`;
+    const simpleText = `Billing  `;
+    const textTheme = `Software`;
+    const description = `Grandeur is a licensed and authorized retailer of wide range of mobile phones and accessories. We offer a convenient and reliable platform for customers to purchase the latest devices and essential add-ons, all under one roof.`;
 
     return (
         <section className=" bg-cover bg-no-repeat bg-top pb-20">
@@ -16,7 +16,7 @@ const ComputerSystemComp = () => {
                 </>
                 <>
                     <div className="grid grid-cols-1 bg-indigo-300 bg-opacity-30 backdrop-blur-sm border border-indigo-300 rounded-md">
-                        {computerSystemData?.map((detail, index) => {
+                        {billingSoftwareData?.map((detail, index) => {
                             return (
                                 <details key={index} className="group">
                                     <summary className="flex items-center justify-between p-4 list-none border border-indigo-300 cursor-pointer">
@@ -30,13 +30,13 @@ const ComputerSystemComp = () => {
                                     </summary>
                                     <div className="border lg:text-base text-sm border-indigo-300 p-4">
                                         {detail?.content && <p className="mb-3">{detail?.content}</p>}
-                                        <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
+                                        {detail?.descriptions && <ul className=" list-[disclosure-closed] marker:text-[#f37022] list-inside space-y-2">
                                             {detail?.descriptions.map((listItem, index) => {
                                                 return (
                                                     <li className="" key={index}>{listItem}</li>
                                                 )
                                             })}
-                                        </ul>
+                                        </ul>}
                                     </div>
                                 </details>
                             )
@@ -48,4 +48,4 @@ const ComputerSystemComp = () => {
     );
 };
 
-export default ComputerSystemComp;
+export default BillingSoftwareComp;

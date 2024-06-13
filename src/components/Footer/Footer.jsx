@@ -8,15 +8,15 @@ const Footer = () => {
 
   return (
     <footer className=" bg-[url('/img/bg/footer-bg.webp')] bg-center bg-cover bg-no-repeat bg-black">
-      <div className="py-8 md:py-12 backdrop-blur-sm">
-        <div className="mx-auto text-sm md:grid md:grid-cols-2 max-w-7xl lg:grid-cols-4 ">
-          <div className="px-3 text-white">
+      <div className="py-8 px-3 md:py-12 backdrop-blur-sm">
+        <div className="mx-auto text-sm grid md:grid-cols-2 max-w-7xl lg:grid-cols-4 gap-6">
+          <div className=" text-white">
             <Link href='/'>
               <img className="w-60" loading="lazy" src="/img/logo/logo.webp" alt="footer" />
             </Link>
             <p className="pt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur architecto, corrupti adipisci quo, neque eveniet doloremque culpa ad quas voluptates, odio nam aliquam. Cum fugit sint necessitatibus nihil minima temporibus earum provident. Odio, quia? Eos.</p>
           </div>
-          <div className="px-3 text-white">
+          <div className=" text-white">
             <h3 className="mb-3 text-lg font-semibold">Our Services</h3>
             <ul className="space-y-2">
               {servicesData?.map((data, index) => {
@@ -29,7 +29,7 @@ const Footer = () => {
               })}
             </ul>
           </div>
-          <div className="px-3 text-white">
+          <div className=" text-white">
             <h3 className="mb-3 text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               {navbarData?.slice(1)?.map((data, index) => {
@@ -48,7 +48,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="px-3 text-white">
+          <div className=" text-white">
             <h3 className="mb-3 text-lg font-semibold">Address</h3>
             <ul className="space-y-2">
               <li className="">

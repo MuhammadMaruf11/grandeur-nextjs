@@ -37,23 +37,18 @@ const Header = () => {
   let mobileMenu;
   if (menuBtn) {
     mobileMenu = (
-      <div className="fixed top-auto z-50 w-full shadow-sm bg-theme">
+      <div className="sticky top-auto z-50 w-full shadow-sm bg-theme">
         <ul className="text-white bg-theme">
-          <li className="my-3">
-            <Link className="w-full block p-2 my-0.5 text-sm" href="/">
-              Home
-            </Link>
-          </li>
-          <li className="my-3">
-            <Link className="w-full block p-2 my-0.5 text-sm" href="/about-us">
-              About us
-            </Link>
-          </li>
-          <li className="my-3">
-            <Link className="w-full block p-2 my-0.5 text-sm" href="/contact-us">
-              Contact Us
-            </Link>
-          </li>
+          {navbarData?.map((data, index) => {
+            const { title, url } = data;
+            return (
+              <li key={index} className="border-b">
+                <Link href={url} className="w-full block p-2 my-0.5 text-sm">
+                  {title}
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     );
@@ -91,7 +86,7 @@ const Header = () => {
             onClick={() => setMenuBtn(!menuBtn)}
             className="flex flex-col items-center justify-center p-1 border border-theme"
           >
-            <img src="/img/icons/toggle.webp" alt="toggle" />
+            <i className="fa-solid fa-bars text-theme text-xl p-1"></i>
           </button>
         </div>
       </div>

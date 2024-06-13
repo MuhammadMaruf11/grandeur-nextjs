@@ -13,7 +13,7 @@ export const PricingComp = () => {
         <section className="bg-indigo-300 bg-opacity-30 backdrop-blur-sm py-20">
             <div className="px-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl xl:max-w-screen-2xl">
                 <SectionHeader simpleText={simpleText} textTheme={textTheme} description={description} />
-                <div className="grid max-w-md text-white xl:gap-14 gap-14 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 xl:grid-cols-4 md:grid-cols-2 xl:max-w-screen-2xl sm:mx-auto">
+                <div className="grid text-white md:gap-12 gap-3 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 xl:grid-cols-4 md:grid-cols-2 xl:max-w-screen-2xl sm:mx-auto">
                     <div className="flex flex-col justify-between p-8 transition-all duration-300 bg-indigo-950  rounded shadow-sm sm:items-center hover:shadow-2xl hover:shadow-indigo-950">
                         <div className="text-center">
                             <div className="text-lg text-white font-semibold">Personal Starter</div>
@@ -35,7 +35,7 @@ export const PricingComp = () => {
                                 href="/"
                                 className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-theme rounded shadow-md hover:bg-theme-2 focus:shadow-outline focus:outline-none"
                             >
-                               Order Package
+                                Order Package
                             </Link>
                             <p className="max-w-xs mt-6 text-xs  sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                                 Sed ut unde omnis iste natus accusantium doloremque.
@@ -63,7 +63,7 @@ export const PricingComp = () => {
                                 href="/"
                                 className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-theme rounded shadow-md hover:bg-theme-2 focus:shadow-outline focus:outline-none"
                             >
-                               Order Package
+                                Order Package
                             </Link>
                             <p className="max-w-xs mt-6 text-xs  sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                                 Sed ut unde omnis iste natus accusantium doloremque.
@@ -91,7 +91,7 @@ export const PricingComp = () => {
                                 href="/"
                                 className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-theme rounded shadow-md hover:bg-theme-2 focus:shadow-outline focus:outline-none"
                             >
-                               Order Package
+                                Order Package
                             </Link>
                             <p className="max-w-xs mt-6 text-xs  sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                                 Sed ut unde omnis iste natus accusantium doloremque.
@@ -119,7 +119,7 @@ export const PricingComp = () => {
                                 href="/"
                                 className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-theme rounded shadow-md hover:bg-theme-2 focus:shadow-outline focus:outline-none"
                             >
-                               Order Package
+                                Order Package
                             </Link>
                             <p className="max-w-xs mt-6 text-xs  sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                                 Sed ut unde omnis iste natus accusantium doloremque.

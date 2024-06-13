@@ -32,7 +32,11 @@ const RequestConnectionComp = () => {
                         </div>
                         <div className='mb-6'>
                             <label htmlFor="address" className="text-sm">Address <span className='text-red-500'>*</span></label>
-                            <input id="address" type="text"  placeholder="Ex: E-9/6 China Town, Naya Paltan, Dhaka-1000" className="w-full mt-2 p-3 rounded dark:bg-gray-100" required />
+                            <input id="address" type="text" placeholder="Ex: E-9/6 China Town, Naya Paltan, Dhaka-1000" className="w-full mt-2 p-3 rounded dark:bg-gray-100" required />
+                        </div>
+                        <div className='mb-6'>
+                            <label htmlFor="addressLink" className="text-sm">Address Link <span className='text-green-500'>(Optional)</span></label>
+                            <input id="addressLink" type="text" placeholder="Ex: https://maps.app.goo.gl/LBXZ38H6CEqeYnr98" className="w-full mt-2 p-3 rounded dark:bg-gray-100" />
                         </div>
                         <div className='mb-6'>
                             <label htmlFor="message" className="text-sm">Message <span className='text-green-500'>(Optional)</span></label>
