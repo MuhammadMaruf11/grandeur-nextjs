@@ -15,7 +15,7 @@ const ContactUsComp = () => {
             <div className="grid max-w-screen-xl items-center gap-6 mx-auto rounded-lg lg:grid-cols-2">
                 <div className="">
                     <div className="space-y-2 text-center">
-                        <h2 className="text-4xl font-bold leading-tight text-theme">Let's talk!</h2>
+                        <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold leading-tight text-theme">Let's talk!</h2>
                         <p>Message us now to discuss your needs.</p>
                     </div>
                     <img src="/img/contact.webp" alt="" className="" />

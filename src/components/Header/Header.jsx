@@ -43,7 +43,7 @@ const Header = () => {
             const { title, url } = data;
             return (
               <li key={index} className="border-b">
-                <Link href={url} className="w-full block p-2 my-0.5 text-sm">
+                <Link onClick={() => setMenuBtn(!menuBtn)} href={url} className="w-full block p-2 my-0.5 text-sm">
                   {title}
                 </Link>
               </li>
@@ -52,7 +52,6 @@ const Header = () => {
         </ul>
       </div>
     );
-
   }
   return (
     <header className={`${headerClassName} text-white transition-all ease-linear top-0 z-50 w-full shadow-sm`}>
