@@ -2,7 +2,7 @@
 
 const SDEComp = () => {
     return (
-        <section className="px-3">
+        <section id="software" className="px-3">
             <div className="grid lg:grid-cols-2 gap-6 items-center max-w-screen-xl mx-auto">
                 <div className="">
                     <img loading='lazy' className='mx-auto' src="/img/solutions/software-development.webp" alt="choose" />

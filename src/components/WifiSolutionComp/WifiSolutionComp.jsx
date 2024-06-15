@@ -2,7 +2,7 @@
 
 const WifiSolutionComp = () => {
     return (
-        <section className="px-3">
+        <section id="wifi" className="px-3">
             <div className="grid lg:grid-cols-2 gap-6 items-center max-w-screen-xl mx-auto">
                 <div className="">
                     <img loading='lazy' className='mx-auto' src="/img/solutions/wifi-solutions.webp" alt="choose" />

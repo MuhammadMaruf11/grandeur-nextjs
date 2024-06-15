@@ -3,7 +3,7 @@
 
 const A2pSMSComp = () => {
     return (
-        <section className="py-20 px-3">
+        <section id="sms" className="py-20 px-3">
             <div className="grid lg:grid-cols-2 gap-6 items-center max-w-screen-xl mx-auto">
                 <div className="order-2 lg:order-1">
                     <div className="bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 md:p-8 p-4 rounded-md">

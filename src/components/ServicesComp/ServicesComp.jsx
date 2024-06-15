@@ -31,7 +31,7 @@ const ServicesComp = () => {
                                         <img loading="lazy" className="w-8" src={icon} alt="icons" />
                                     </div>
                                     <h3 className="text-xl text-theme font-bold">{title}</h3>
-                                    <p className="text-xm">{description}</p>
+                                    <p className="text-sm">{description}</p>
                                     <Link className="border border-theme text-theme hover:bg-theme hover:text-white transition-all ease-linear px-3 py-2" href={url}>More Details <i className="fa-regular fa-arrow-up-right ms-1"></i></Link>
                                 </div>
                             )

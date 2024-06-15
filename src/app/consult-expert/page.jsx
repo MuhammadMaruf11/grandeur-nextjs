@@ -1,3 +1,4 @@
+import ConsultComp from '@/components/ConsultComp/ConsultComp';
 import SubBannerComp from '@/components/SubBannerComp/SubBannerComp';
 import React from 'react';
 
@@ -10,7 +11,7 @@ const consultExpert = () => {
         <main>
             <SubBannerComp mainTitle={mainTitle} />
             <div className="bg-[url('/img/bg/BGLine-01.webp')] bg-cover bg-no-repeat bg-top py-20">
-
+                <ConsultComp />
             </div>
         </main>
     );
