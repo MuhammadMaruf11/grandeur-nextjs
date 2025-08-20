@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { cloudServiceData } from "@/allData/cloudServiceData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const CloudServiceComp = () => {
+const CloudServiceComp = ({ cloudServiceData }) => {
 
     const simpleText = `Cloud Services & `;
     const textTheme = `Datacenters providers`;

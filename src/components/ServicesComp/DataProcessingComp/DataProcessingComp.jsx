@@ -1,9 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import { wholesaleData } from "@/allData/wholesaleData";
-import { dataProcessingData } from "@/allData/dataProcessingData";
 
-const DataProcessingComp = () => {
+const DataProcessingComp = ({ dataProcessingData }) => {
 
     const simpleText = `Computer &  `;
     const textTheme = `Data Processing Requisites Trading.`;

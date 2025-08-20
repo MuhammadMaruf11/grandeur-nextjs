@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import { wifiHotspotData } from "@/allData/wifiHotspotData";
 
-const WifiHotspotComp = () => {
+const WifiHotspotComp = ({ wifiHotspotData }) => {
 
     const simpleText = `WIFI Internet `;
     const textTheme = `Service Agreement.`;

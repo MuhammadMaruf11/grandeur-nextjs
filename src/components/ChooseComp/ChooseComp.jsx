@@ -1,11 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 const ChooseComp = () => {
     return (
         <section className="py-20 px-3">
             <div className="grid gap-6 lg:grid-cols-2 items-center max-w-screen-xl mx-auto">
                 <div className="">
-                    <img loading='lazy' className='mx-auto' src="/img/about/choose-us.webp" alt="choose" />
+                    <Image width={615} height={410} className='mx-auto' src="/img/about/choose-us.webp" alt="choose" />
                 </div>
                 <div className="">
                     <div className="bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 md:p-8 p-4 rounded-md">

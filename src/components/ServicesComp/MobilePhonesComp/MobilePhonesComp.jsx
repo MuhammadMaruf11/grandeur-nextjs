@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { mobilePhonesData } from "@/allData/mobilePhonesData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const MobilePhonesComp = () => {
+const MobilePhonesComp = ({ mobilePhonesData }) => {
 
     const simpleText = `Mobile Phones & `;
     const textTheme = `Accessories Trading Service`;

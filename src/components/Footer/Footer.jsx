@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { navbarData } from "@/allData/navbarData";
 import { servicesData } from "@/allData/servicesData";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -12,7 +11,7 @@ const Footer = () => {
         <div className="mx-auto text-sm grid md:grid-cols-2 max-w-7xl lg:grid-cols-4 gap-6">
           <div className=" text-white">
             <Link href='/'>
-              <img className="w-60" loading="lazy" src="/img/logo/logo.webp" alt="footer" />
+              <Image width={240} height={49} className="w-60" loading="lazy" src="/img/logo/logo.webp" alt="footer" />
             </Link>
             <p className="pt-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur architecto, corrupti adipisci quo, neque eveniet doloremque culpa ad quas voluptates, odio nam aliquam. Cum fugit sint necessitatibus nihil minima temporibus earum provident. Odio, quia? Eos.</p>
           </div>

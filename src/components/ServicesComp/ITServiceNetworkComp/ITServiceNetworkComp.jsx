@@ -1,8 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-import { itNetworkServiceData } from "@/allData/itNetworkServiceData";
+
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const ITServiceNetworkComp = () => {
+const ITServiceNetworkComp = ({ itNetworkServiceData }) => {
 
     const simpleText = `Information Technology `;
     const textTheme = `Network services`;

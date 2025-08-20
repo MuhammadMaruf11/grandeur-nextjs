@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { internetServiceData } from "@/allData/internetServiceData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const InternetServiceComp = () => {
+const InternetServiceComp = ({ internetServiceData }) => {
 
     const simpleText = `Internet  `;
     const textTheme = `Service`;

@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
+
+import Image from "next/image";
 
 const ExpertiseComp = () => {
     return (
@@ -18,7 +19,7 @@ const ExpertiseComp = () => {
                     </div>
                 </div>
                 <div className="order-1 lg:order-2">
-                    <img loading="lazy" className='mx-auto' src="/img/about/our-expertise.webp" alt="expertise" />
+                    <Image width={616} height={616} loading="lazy" className='mx-auto' src="/img/about/our-expertise.webp" alt="expertise" />
                 </div>
             </div>
         </section>

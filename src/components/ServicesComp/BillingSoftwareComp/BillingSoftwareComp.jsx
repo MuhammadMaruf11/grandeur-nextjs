@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { billingSoftwareData } from "@/allData/billingSoftwareData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const BillingSoftwareComp = () => {
+const BillingSoftwareComp = ({ billingSoftwareData }) => {
 
     const simpleText = `Billing  `;
     const textTheme = `Software`;

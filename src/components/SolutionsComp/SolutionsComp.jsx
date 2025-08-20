@@ -1,11 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 'use client'
+import Image from 'next/image';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Link from 'next/link';
-import { solutionsData } from '@/allData/solutionsData';
 // import { useRouter } from 'next/navigation';
 
-const SolutionsComp = () => {
+const SolutionsComp = ({ solutionsData }) => {
 
     const simpleText = `Our Network Solutions`;
     const textTheme = `to solve your packets challenges.`;
@@ -32,7 +31,7 @@ const SolutionsComp = () => {
                                     // onClick={() => handleScroll(url.split('=')[1])}
                                     className=" bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 flex flex-col items-center gap-4 text-center px-7 rounded-md transition-all ease-linear py-14 hover:shadow-2xl">
                                     <div className="bg-white bg-opacity-50 border-2 border-indigo-300 p-3 mb-3 rounded-md text-4xl">
-                                        <img loading="lazy" className="w-8" src={icon} alt="icons" />
+                                        <Image width={32} height={32} className="w-8" src={icon} alt="icons" />
                                     </div>
                                     <h3 className="text-xl text-theme font-bold">{title}</h3>
                                     <p className="text-sm">{description}</p>

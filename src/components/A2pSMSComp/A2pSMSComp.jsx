@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-img-element */
+
+import Image from "next/image";
 
 const A2pSMSComp = () => {
     return (
@@ -19,7 +20,7 @@ const A2pSMSComp = () => {
                     </div>
                 </div>
                 <div className="order-1 lg:order-2">
-                    <img loading='lazy' className='mx-auto' src="/img/solutions/A2PMessaging.webp" alt="choose" />
+                    <Image width={628} height={513} className='mx-auto' src="/img/solutions/A2PMessaging.webp" alt="choose" />
                 </div>
             </div>
         </section>

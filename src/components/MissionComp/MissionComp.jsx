@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 const MissionComp = () => {
     return (
@@ -13,7 +13,7 @@ const MissionComp = () => {
                     </div>
                 </div>
                 <div className="order-1 lg:order-2">
-                    <img loading='lazy' className='mx-auto' src="/img/about/our-mission.webp" alt="mission" />
+                    <Image width={623} height={286} className='mx-auto' src="/img/about/our-mission.webp" alt="mission" />
                 </div>
             </div>
         </section>

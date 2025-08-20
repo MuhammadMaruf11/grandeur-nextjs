@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import SectionHeader from "../SectionHeader/SectionHeader";
 
 const ContactUsComp = () => {
@@ -18,7 +17,7 @@ const ContactUsComp = () => {
                         <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold leading-tight text-theme">Let's talk!</h2>
                         <p>Message us now to discuss your needs.</p>
                     </div>
-                    <img src="/img/contact.webp" alt="" className="" />
+                    <Image width={628} height={413} src="/img/contact.webp" alt="" className="" />
                 </div>
                 <div className="w-full mx-auto  bg-indigo-300 bg-opacity-30 backdrop-blur-sm border-2 border-indigo-300 rounded-md md:p-14 p-5">
                     <form noValidate="" className="space-y-6">

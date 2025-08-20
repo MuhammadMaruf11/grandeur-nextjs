@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { navbarData } from "@/allData/navbarData";
+import Image from "next/image";
 
 const Header = () => {
 
@@ -58,7 +58,9 @@ const Header = () => {
       <div className="flex items-center justify-between w-full px-3 py-3 mx-auto max-w-7xl">
         <div className="w-2/3 md:w-1/3 lg:w-1/6">
           <Link href="/">
-            <img
+            <Image
+              width={209}
+              height={43}
               className="mx-auto lg:mx-0"
               src="/img/logo/logo.webp"
               alt="header_logo"

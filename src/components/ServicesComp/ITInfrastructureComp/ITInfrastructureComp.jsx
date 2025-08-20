@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { itInfrastructureData } from "@/allData/itInfrastructureData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const ITInfrastructureComp = () => {
+const ITInfrastructureComp = ({ itInfrastructureData }) => {
 
     const simpleText = `IT `;
     const textTheme = `Infrastructure`;

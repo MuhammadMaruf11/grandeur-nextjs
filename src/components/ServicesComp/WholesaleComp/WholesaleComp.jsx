@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
-import { wholesaleData } from "@/allData/wholesaleData";
 
-const WholesaleComp = () => {
+const WholesaleComp = ({ wholesaleData }) => {
 
     const simpleText = `Wholesale Mobile & Laptop `;
     const textTheme = `Sells Agreement.`;

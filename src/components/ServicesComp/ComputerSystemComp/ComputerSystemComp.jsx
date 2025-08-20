@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-import { computerSystemData } from "@/allData/computerSystemData";
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
-const ComputerSystemComp = () => {
+const ComputerSystemComp = ({ computerSystemData }) => {
 
     const simpleText = `Computer Systems &  `;
     const textTheme = `Communication Equipment Software Trading.`;
